@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { BaseComponent } from './base/base.component';
 import { ProductsComponent } from './products/list.component';
-import { ProductNewEditComponent } from './products/productNewEdit.component';
+import { ProductNewEditComponent } from './products/product-new-edit.component';
 import { PublicProductsComponent } from './public-products/public-list.component';
 
 @NgModule({

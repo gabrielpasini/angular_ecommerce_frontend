@@ -7,8 +7,8 @@ import * as _ from 'lodash';
 
 @Component({
   selector: 'new-edit',
-  templateUrl: './productNewEdit.component.html',
-  styleUrls: ['./productNewEdit.component.scss'],
+  templateUrl: './product-new-edit.component.html',
+  styleUrls: ['./product-new-edit.component.scss'],
 })
 export class ProductNewEditComponent {
   @BlockUI() blockUI: NgBlockUI;
