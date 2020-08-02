@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Frontend Challenge</title>
+</head>
+<body>
+  <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <span class="navbar-brand col-md-3 col-lg-2 mr-0 px-3">Frontend Challenge</span>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <button *ngIf="logged" (click)="logout()" type="button" class="btn btn-sm btn-outline-secondary">Sign out</button>
+        <button *ngIf="!logged" (click)="login()" type="button" class="btn btn-sm btn-outline-primary">Sign In</button>
+      </li>
+    </ul>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="sidebar-sticky pt-3">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a *ngIf="activeRoute === '/products/list'" class="nav-link active" href="/products/list">All Products</a>
+              <a *ngIf="activeRoute !== '/products/list'" class="nav-link " href="/products/list">All Products</a>
+            </li>
+            <li class="nav-item">
+              <a *ngIf="activeRoute === '/products/public-list'" class="nav-link active" href="/products/public-list">Public Products</a>
+              <a *ngIf="activeRoute !== '/products/public-list'" class="nav-link" href="/products/public-list">Public Products</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+    <router-outlet></router-outlet>
+  </main>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Frontend Challenge · Login</title>
+</head>
+<body class="text-center">
+  <form class="form-signin" #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+    <img class="mb-4" src="https://angular.io/assets/images/logos/angular/angular.svg" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">Frontend Challenge</h1>
+    <div *ngIf="error" class="form-control alert alert-danger" role="alert">
+      {{ error }}
+    </div>
+    <label for="identifier" class="sr-only">E-mail</label>
+    <input type="email" id="identifier" name="identifier" class="form-control" placeholder="E-mail" ngModel required autofocus>
+    <label for="password" class="sr-only">Password</label>
+    <input type="password" id="password" name="password" class="form-control" placeholder="Password" ngModel required>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Go!</button>
+    <button (click)="viewPublicProducts()" class="btn btn-sm btn-secondary btn-block" type="button">View Public Products</button>
+  </form>
+</body>
+</html>
