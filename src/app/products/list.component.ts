@@ -3,7 +3,7 @@ import { BlockUI, NgBlockUI } from 'ng-block-ui';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { baseUrl } from '../../environments/environment';
-import _ from 'lodash';
+import * as _ from 'lodash';
 
 @Component({
   selector: 'list',
@@ -13,7 +13,7 @@ import _ from 'lodash';
 export class ProductsComponent {
   @BlockUI() blockUI: NgBlockUI;
   constructor(private router: Router, private http: HttpClient) {}
-  public products: [];
+  public products: any[];
   public productToDelete;
 
   getProducts(): void {

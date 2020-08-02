@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { baseUrl } from '../../environments/environment';
-import _ from 'lodash';
+import * as _ from 'lodash';
 
 @Component({
   selector: 'public-list',
@@ -10,7 +10,7 @@ import _ from 'lodash';
 })
 export class PublicProductsComponent {
   constructor(private http: HttpClient) {}
-  public products: [];
+  public products: any[];
   public productToDelete;
 
   getEnabledProducts(): void {

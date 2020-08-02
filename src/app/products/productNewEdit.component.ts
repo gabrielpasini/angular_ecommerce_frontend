@@ -3,7 +3,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { BlockUI, NgBlockUI } from 'ng-block-ui';
 import { baseUrl } from '../../environments/environment';
-import _ from 'lodash';
+import * as _ from 'lodash';
 
 @Component({
   selector: 'new-edit',

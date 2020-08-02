@@ -10,27 +10,27 @@ Dependência externa utilizada para auxílio [Lodash](https://lodash.com/) v4.17
 
 # Como baixar o projeto
 
-Rode o comando `git clone https://github.com/gabrielpasini/frontend_challenge.git` para baixar o projeto.
+Rode o comando abaixo para baixar o projeto.
 ```
-git clone
+git clone https://github.com/gabrielpasini/frontend_challenge.git
 ```
-Rode o comando  `cd frontend_challenge` para entrar no repositório baixado.
+Rode o comando abaixo para entrar no repositório baixado.
 ```
-cd frontend-challenge
+cd frontend_challenge
 ```
-Rode o comando  `npm install` para baixar todas as dependências do projeto.
+Rode o comando abaixo para baixar todas as dependências do projeto.
 ```
 npm install
 ```
 
 # Como rodar o projeto
 
-Rode o comando  `ng serve` para rodar o projeto e acesse `http://localhost:4200/`.
+Rode o comando abaixo para rodar o projeto e acesse `http://localhost:4200/`.
 ```
 ng serve
 ```
 ### OU
-Rode o comando  `ng serve --open` para rodar e abrir automaticamente o navegador em `http://localhost:4200/`
+Rode o comando abaixo para rodar e abrir automaticamente o navegador em `http://localhost:4200/`
 ```
 ng serve --open
 ```
