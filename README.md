@@ -12,11 +12,11 @@ Dependência externa utilizada para auxílio [Lodash](https://lodash.com/) v4.17
 
 Rode o comando abaixo para baixar o projeto.
 ```
-git clone https://github.com/gabrielpasini/frontend_challenge.git
+git clone https://github.com/gabrielpasini/angular_ecommerce_frontend.git
 ```
 Rode o comando abaixo para entrar no repositório baixado.
 ```
-cd frontend_challenge
+cd angular_ecommerce_frontend
 ```
 Rode o comando abaixo para baixar todas as dependências do projeto.
 ```
